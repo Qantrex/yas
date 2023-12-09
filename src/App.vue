@@ -1,12 +1,12 @@
+<!-- App.vue -->
+
 <template>
   <div id="app">
-    <!-- Allows users to pick accent color -->
     <ColorPicker @colorChanged="updateAccentColor" />
-    <!-- Basic Search Bar with 3 Search Engines -->
     <SearchBar />
-    <!-- Displays Quick Links in different Categories -->
     <QuickLinks />
     <CustomCursor />
+    <Terminal />
   </div>
 </template>
 
@@ -14,7 +14,8 @@
 import SearchBar from "@/components/SearchBar.vue";
 import QuickLinks from "@/components/QuickLinks.vue";
 import ColorPicker from "@/components/ColorPicker.vue";
-import CustomCursor from '@/components/CustomCursor.vue';
+import CustomCursor from "@/components/CustomCursor.vue";
+import Terminal from "@/components/Terminal.vue";
 
 export default {
   name: "App",
@@ -23,9 +24,9 @@ export default {
     QuickLinks,
     ColorPicker,
     CustomCursor,
+    Terminal
   },
   methods: {
-    // Method to update the accent color based on ColorPicker selection
     updateAccentColor(newColor) {
       document.documentElement.style.setProperty("--accent-color", newColor);
     },

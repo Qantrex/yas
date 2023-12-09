@@ -43,6 +43,8 @@ export default {
     handleEnterKey() {
       if (this.searchQuery.trim() !== "") {
         const searchUrl = this.getSearchUrl();
+        console.log("Search URL:", searchUrl);
+        this.searchQuery = "";
         window.open(searchUrl, "_blank");
       } else {
         // Clear search query if empty on Enter key press
