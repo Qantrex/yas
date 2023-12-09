@@ -14,11 +14,12 @@ YAS is a simple and customizable start page built with Vue.js It features a mini
 
 1. Clone the repository:
 ``` bash
-git clone https://github.com/your-username/yas-startpage.git cd yas-startpage
+git clone https://github.com/Qantrex/yas.git cd yas
 ```
-2. Install dependencies:
+2. Install adn fund dependencies:
 ``` bash
 npm install
+npm fund
 ```
 3. Run the development server:
 ``` bash
