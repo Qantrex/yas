@@ -57,7 +57,7 @@ export default {
       if (event.key === "Enter") {
         event.preventDefault();
         this.executeCommand(this.input.trim());
-        this.input = ""; // Clear the input after executing the command
+        this.input = "";
       }
     },
     executeCommand(command) {
@@ -79,7 +79,7 @@ export default {
         case "q":
           this.toggleTerminal();
           break;
-        case "example": // Replace with your actual command
+        case "example":
           this.handleExampleCommand(subCommands, parameters);
           break;
         case "calc":
@@ -212,7 +212,7 @@ export default {
   border-radius: 5px;
   resize: none;
   overflow: auto;
-  padding: 20px; /* Updated padding */
+  padding: 20px;
 }
 
 .output-area {
